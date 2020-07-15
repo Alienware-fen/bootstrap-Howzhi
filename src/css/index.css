@@ -1,0 +1,1009 @@
+*{
+    margin: 0px;
+    padding:0px;
+    list-style: none;
+}
+/* ----------------------------nav------------------------------ */
+/* 导航栏搜索文字图标 */
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    
+  }
+.icon-size{
+    font-size: 1.3em;
+    cursor: pointer;
+}
+/* 导航栏背景 */
+.mybody .navbar-default{
+    background-color: white;
+    border: none;
+    padding-top: 20px;
+}
+/* logo */
+.mynav .warp-left{
+    float: left;
+}
+
+/* a */
+.mynav .navbar-nav > .active > a,
+.mynav .navbar-nav > .active > a:hover{
+    background-color: white;
+}
+.mynav .navbar-nav > .active > a:hover,
+.mynav .navbar-nav >li> a:hover{
+    color: #15C288;
+}
+.mynav .navbar-nav > .open > a,
+.mynav .navbar-nav > .open > a:hover,
+.mynav .navbar-nav > .open > a:focus{
+    background-color: white;
+    color: #15C288;
+}
+
+/* li */
+.mynav .warp-li>li{
+    margin:0px 13px;
+    color: #666;
+    font-size: 16px;
+}
+
+/* 课程子目录 */
+.mynav .dropdown-menu{
+    top:148%;
+    min-width: 300px;
+    padding:5px
+}
+.mynav .warp-course>li{
+    float: left;
+}
+
+.mynav .dropdown-menu > li > a{
+    padding: 10px 20px;
+}
+
+.mynav .dropdown-menu > li > a:hover{
+    background-color: #15C288;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+/* 右边课程 */
+.mynav .dropdown-class>a{
+    padding: 0 15px;
+    cursor: pointer;
+    color: #666;
+    text-decoration: none;
+}
+.mynav .dropdown-class .dropdown-menu > li > a{
+    padding:7px 15px
+}
+.mynav .dropdown-class>a:hover{
+    text-decoration: none;
+}
+.mynav .dropdown-class .dropdown-menu{
+    padding:0px;
+    min-width: 0px;
+    border: none;
+    border-radius: 0px;
+    top:65px
+}
+
+.mynav .dropdown-class .dropdown-menu>li>a:hover{
+    background-color: rgba(184, 181, 181, 0.137);
+    color: #15C288;
+}
+
+/* 包裹右边课程的div */
+.mynav .warp-all {
+    line-height: 34px;
+    border-left:1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+}
+/* 输入框 */
+.mynav .warp-all .seacher .form-control{
+    padding:3px 0px;
+    padding-left: 30px;
+    outline: none;
+    border: 1px solid transparent;
+    box-shadow:inset 0 0px 0px transparent;
+    border-left:1px solid #f0f0f0;
+}
+.mynav .warp-all .seacher .form-control:focus{
+    outline: none;
+}
+.mynav .warp-all .seacher>a{
+     /* 搜索框的参考 */
+     position: relative;
+}
+/*搜索框图标 */
+.mynav .warp-all .icon-size{
+    position: absolute;
+    top:0px;
+    left: -60px;
+}
+
+/* 登陆注册 */
+.mynav .rig-login >li>a{
+    color: #15C288;
+}
+
+ /*  响应式按钮组样式*/
+ .navLeft{
+    float: left;
+    background-color: #15C288;
+    margin:1em;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navLeft:focus{
+    background-color: #15C288;
+}
+    /* 三横线 */
+.navbar-default .navbar-toggle .spanBcg{
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .mybody .navbar-default{
+        padding: 0px;
+    }
+    /* 整体边框 */
+    .container-bottom{
+        padding:15px 15px 0px 15px;
+    }
+
+    /* 导航栏子目录显示 */
+    .mynav .nav-border{
+        position: absolute;
+        z-index:9999;
+        border:none;
+        background: white;
+    }
+    .mynav .nav-center{
+        line-height: 55px;
+    }
+    /* 登陆注册 */
+    .mynav .navbar-header .sma-login{
+        float: right;
+        box-sizing: border-box;
+    }
+    .mynav .navbar-header .sma-login>li{
+        float: right;
+        margin:0px 7px;
+        font-size: 16px;
+    }
+    /* logo */
+    .warp-img{
+        display: inline-block!important;
+        width: 50%;
+        margin-left: 5em;
+        box-sizing: border-box;
+    }
+}
+
+/* 平板 */
+@media (min-width:769px) and  (max-width:992px) {
+    .mynav .warp-all .seacher .form-control{
+        border-left:none;
+        padding-left: 0px;
+        width: 140px;
+    }
+    .mynav .warp-li>li{
+        margin:0px
+    }
+    .mynav .warp-all .icon-size{
+        position: absolute;
+        top:0px;
+        left: -23px;
+    }
+}
+
+/* ------------------------------------main -----------------------------------------------*/
+/* 轮播图 */
+main{
+    position: relative;
+}
+
+.slide .carousel-indicators .active,
+.slide .carousel-indicators>li{
+    width: 15px;
+    height: 15px;
+}
+
+.slide .glyphicon-chevron-left{
+    left:20%;
+}
+.slide .glyphicon-chevron-right{
+    right:20%;
+}
+
+/* 包裹div样式 */
+.warp-data{ 
+    position: absolute;
+    right: 60px;
+    top: 10px;
+    z-index: 2;
+    color: white;
+}
+/* 文字：现在 */
+.warp-position{
+    position: relative;
+    border-radius: 10px;
+    padding: 18px 22px;
+    background: rgba(5, 5, 5, 0.11);
+}
+.txt-position{
+    position: relative;
+}
+.word-now{
+    padding-left: 12px;
+}
+.word-now:after{
+    content: "";
+    position: absolute;
+    left: 20px;
+    top:20px;
+    width: 5px;
+    border-radius: 5px;
+    height: 16px;
+    background: #fd7b53;
+}
+
+/* 文字：人数 */
+.warp-font{
+    font-weight: bold;
+    font-size: 55px;
+    margin-right: 50px;
+}
+main .warp-data .warp-txt  {
+    position: absolute;
+    right: 7px;
+    top: 44%;
+}
+/* 文字：链接 */
+.warp-data>a{
+    text-decoration: none;
+    display: block;
+    border-radius: 40px;
+    padding: 10px 0px;
+    margin-top: 15px;
+    font-size: 20px;
+    background: #fd7b53;
+    color: #fff;
+}
+
+/* ----------------section-------------------- */
+
+/* hot-course */
+/* 文字 */
+.word-strong{
+    font-weight: normal;
+    padding: 0 20px;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+section h2{
+    /* 横线参考标准 */
+    position: relative;
+    padding:30px 0px;
+    color:#616161;
+}
+section h2>hr{
+    position: absolute;
+    width: 100%;
+    top:29%;
+    color:grey
+}
+
+section #hotCourse {
+    position: relative;
+}
+#hotCourse .glyphicon-chevron-left,
+#hotCourse .glyphicon-chevron-right{
+    position: absolute;
+    top: 50%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 16px;
+    color: gray;
+    background-color: rgba(255, 255, 255, 0.192);
+ }
+
+#hotCourse .glyphicon-chevron-left:hover,
+#hotCourse .glyphicon-chevron-right:hover{
+    background-color: rgba(255, 255, 255, 0.815)
+}
+
+#hotCourse  .carousel-control{
+    width: 15px;
+}
+
+#hotCourse .glyphicon-chevron-left{
+    left:25px
+}
+
+#hotCourse .glyphicon-chevron-right{
+    right:25px;
+}
+#hotCourse img:hover{
+    cursor: pointer;
+}
+#hotCourse .warp-pic{
+    /* 文字和图片的参考 */
+    position: relative;
+}
+
+#hotCourse .warp-pic img{
+    transform: scale(0.5);
+}
+#hotCourse .warp-pic .pager{
+    margin:-23px;
+    font-weight: bold;
+}
+#hotCourse .warp-pic .txt-buttom{
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+}
+
+#hotCourse .warp-pic .txt-buttom span img{
+    transform: scale(0.3);
+}
+
+@media (max-width:768px){
+    #hotCourse .glyphicon-chevron-left,
+    #hotCourse .glyphicon-chevron-right{
+        margin-top:-35px
+    }
+    #hotCourse .glyphicon-chevron-left{
+        left:28%
+    }
+    
+    #hotCourse .glyphicon-chevron-right{
+        right:28%;
+    }
+}
+
+@media (min-width:769px) and (max-width:992px){
+    #hotCourse .glyphicon-chevron-left,
+    #hotCourse .glyphicon-chevron-right{
+        margin-top:-35px
+    }
+    #hotCourse .glyphicon-chevron-left{
+        left:23%
+    }
+    
+    #hotCourse .glyphicon-chevron-right{
+        right:23%;
+    }
+}
+
+
+section .warp-all{
+    /* 导航图片的 */
+    position: relative;
+}
+
+/* 精品课程 */
+/* tab头部 */
+section .warp-tab{
+    text-align: center;
+}
+section .warp-display{
+    border: none;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+section .warp-display>li{
+    margin:0px 5px
+}
+section .warp-display>li>a{
+    border: none;
+    border-radius: 4px;
+    color: gray;
+}
+section .warp-display>li.active>a,
+section .warp-display>li.active>a:focus,
+section .warp-display>li>a:hover{
+    border: none;
+    color: white;
+    border-radius: 4px;
+    background: #15C288;
+}
+
+/* tab内容 */
+/* 图片放大缩小 */
+section .warp-scale{
+    transform: scale(1.1);
+    transition:  transform 0.5s;
+}
+section .warp-scaleafter{
+    transform: scale(1);
+    transition:  transform 0.5s;
+}
+
+section .warp-border{
+    border: none;
+}
+section .warp-overflow{
+    cursor: pointer;
+    overflow: hidden;
+}
+/* 文字内容设置 */
+section .warp-a{
+    white-space: nowrap;
+    text-overflow:clip;
+    overflow: hidden;
+}
+section .warp-a>a{
+    float: left;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+section .warp-a>a:hover{
+    color: #15C288;
+    cursor: pointer;
+}
+section .warp-txt{
+    /* 头像定位参考 */
+    position: relative;
+    padding-left: 30px;
+    margin-top: 30px;
+}
+section .warp-txt>.img-re1,
+section .warp-txt>.img-re2,
+section .warp-txt>.img-re3,
+section .warp-txt>.img-re4,
+section .warp-txt>.img-re5,
+section .warp-txt>.img-re6,
+section .warp-txt>.img-re7{
+    float: left;
+    color: #999;
+}
+section .warp-txt>.img-re1::before,
+section .warp-txt>.img-re2::before,
+section .warp-txt>.img-re3::before,
+section .warp-txt>.img-re4::before,
+section .warp-txt>.img-re5::before,
+section .warp-txt>.img-re6::before,
+section .warp-txt>.img-re7::before{
+    content: "";
+    transform: scale(0.2);
+    background: url('../img/index/r1.jpg') no-repeat;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top:-42px;
+    left:-35px
+}
+section .warp-txt>.img-re2::before{
+    background: url('../img/index/r2.jpg') no-repeat;
+}
+section .warp-txt>.img-re3::before{
+    background: url('../img/index/r3.jpg') no-repeat;
+}
+section .warp-txt>.img-re4::before{
+    background: url('../img/index/r4.jpg') no-repeat;
+}
+section .warp-txt>.img-re5::before{
+    background: url('../img/index/r5.jpg') no-repeat;
+}
+section .warp-txt>.img-re6::before{
+    background: url('../img/index/r6.jpg') no-repeat;
+}
+section .warp-txt>.img-re7::before{
+    background: url('../img/index/r7.jpg') no-repeat;
+}
+
+section .warp-txt .txt-money{
+    float: right;
+    color: #FD9271;
+}
+section .warp-txt .txt-free{
+    float: right;
+    color: #15C288;
+}
+section .tab-content .warp-padding{
+    padding: 9px 0px;
+}
+
+/*响应式 */
+@media (max-width: 768px){
+    section .warp-display>li{
+        margin:0px auto; 
+    }
+    .warp-panes .thumbnail{
+        margin-bottom: 26px;
+    }
+}
+
+/* 班级推荐 */
+/* 图案边框 */
+.classRecommend .thumbnail{
+    border: none;
+}
+/* 图案标题 */
+.classRecommend h3{
+    font-size: 14px;
+    color: #444;
+    margin: 13px 0;
+}
+/* 图片蒙版 */
+.classRecommend .warp-over,
+#hotCourse .warp-over{
+    position: relative;
+    display: inline-block;
+}
+
+.classRecommend .warp-pic,
+#hotCourse  .warp-pic{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top:0px;
+    cursor: pointer;
+    background: rgba(4, 4, 4, 0.7);
+    z-index:1;
+    padding:30px 50px;
+    opacity: 0;
+    color:white;
+    transition: all 0.5s ease; 
+}
+.classRecommend .pic-show,
+#hotCourse  .pic-show{
+    opacity: 1;
+}
+
+/* 蒙版文字 */
+.classRecommend .warp-pic>ul>li>span:nth-of-type(2){
+    color: #15C288;
+}
+/* 文字样式 */
+.classRecommend .thumbnail .caption{
+    border: 1px solid #f0f0f0;
+    border-top: 1px solid transparent;
+}
+.classRecommend .caption p{
+    height: 34px;
+}
+.classRecommend p:nth-of-type(1){
+    font-size: 12px;
+}
+.classRecommend p:nth-of-type(2)>a{
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    padding: 8px 0;
+    border-radius: 4px;
+    color: white;
+    background-color: #15C288;
+    border: 1px solid #34a263;
+}
+.classRecommend p:nth-of-type(2)>a:hover{
+    background-color:#2caf65;
+}
+
+/* 班级动态 */
+.classRecommend .word-rotation{
+    /* 班级动态的定位参考 */
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #f0f0f0;
+}
+
+/* 班级动态 */
+.classRecommend .word-rotation>h4{
+    padding-left:15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.classRecommend .word-rotation>h4::before{
+    content: "";
+    position: absolute;
+    left: 19px;
+    top:31px;
+    width: 5px;
+    border-radius: 5px;
+    height: 16px;
+    background: #15C288;
+}
+
+/* 文字走马灯 */
+.classRecommend .txt{
+    background-color: white;
+    width: 100%;  
+    padding-bottom: 30px;   
+}
+
+.classRecommend .txt-left,
+.classRecommend .txt-rig{
+    position: relative;
+    width: 50%;
+    padding:5px 40px;
+    padding-bottom: 30px; 
+}
+
+.classRecommend  .txt-col{
+    font-size: 14px;
+    color: #666;
+    float: left;
+}
+.classRecommend  .txt-col::before{
+    content: "";
+    transform: scale(0.2);
+    background: url('../img/index/class-icon.jpg') no-repeat;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top:-36px;
+    left:-25px
+}
+
+.classRecommend  .txt-center{
+    font-size: 14px;
+    color: #15C288;
+    float: left;
+}
+
+.classRecommend .txt-day{
+    font-size: 14px;
+    color: #999;
+    float: right;
+}
+
+/* 响应式布局 */
+@media (max-width:768px){
+    .classRecommend .txt-left,
+    .classRecommend .txt-rig{
+        width: 100%;
+    }
+}
+
+/* 更多 */
+.classRecommend .warp-more,
+.hotTopic .warp-more,
+.fashion .warp-more{
+    width: 100%;
+}
+.classRecommend .warp-more>a,
+.hotTopic .warp-more>a,
+.fashion .warp-more>a{
+    margin: 25px 10px 0px;
+    font-size: 12px;
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 15px;
+    padding: 4px 11px;
+    display: inline-block;
+    float: right;
+}
+.classRecommend .warp-more>a:hover,
+.hotTopic .warp-more>a:hover,
+.fashion .warp-more>a:hover{
+    color: #15C288;
+    border: 1px solid #15C288;
+    text-decoration: none;
+}
+
+/* 话题精选 */
+section .hotTopic{
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.hotTopic strong{
+    background-color: #f6f6f6;;
+}
+section .hotTopic{
+    /* width: 100%; */
+    background-color: #f6f6f6;
+}
+
+/* 左右导航 */
+.hotTopic .pic-rotation{
+    /* 左右导航的参考 */
+    position: relative;
+}
+.hotTopic .glyphicon-chevron-left,
+.hotTopic .glyphicon-chevron-right{
+    position: absolute;
+    top: 50%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 16px;
+    color: gray;
+    background-color: rgba(255, 255, 255, 0.192);
+}
+.hotTopic .glyphicon-chevron-left{
+    left:6%
+}
+
+.hotTopic .glyphicon-chevron-right{
+    right:6%;
+}
+.hotTopic .glyphicon-chevron-left:hover,
+.hotTopic .glyphicon-chevron-right:hover{
+    background-color: rgba(255, 255, 255, 0.815)
+}
+
+/* 话题文字 */
+#new-click  .carousel-caption{
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#new-click .carousel-caption .pager{
+    font-size: 16px;
+}
+#new-click .carousel-caption .name-span{
+    float: left;
+}
+#new-click .carousel-caption .day-span{
+    float: right;
+}
+#new-click .carousel-caption .icon-size{
+    font-size: 25px;
+}
+#new-click .col-md-3{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+@media (max-width:992px) and (min-width:768px){
+    #new-click .col-sm-6{
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+    }
+    #new-click .margin-left{
+        margin-right:10px
+    } 
+    #new-click .margin-rig{
+        margin-left:10px 
+    }
+    .hotTopic .glyphicon-chevron-left{
+        left:62%
+    }
+    
+    .hotTopic .glyphicon-chevron-right{
+        right:62%;
+    }
+}
+
+@media (max-width:767px){
+    #new-click .col-sm-6{
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+    }
+    .hotTopic .glyphicon-chevron-left{
+        top:45%;
+        left:12%
+    }
+    
+    .hotTopic .glyphicon-chevron-right{
+        top:45%;
+        right:12%;
+    }
+}
+
+/* 认证达人 */
+.fashion{
+    margin-bottom: 30px;
+}
+.fashion .carousel-caption{
+    text-align: left;
+    color: #616161;
+    text-shadow:0 1px 2px transparent;
+    bottom: -25px;
+    left:36%;   
+}
+.fashion .glyphicon-chevron-left{
+    left:20%;
+}
+.fashion .glyphicon-chevron-right{
+    right:20%;
+}
+.fashion .carousel-control{
+    width: 10%;
+    opacity: 0;
+}
+.fashion .carousel-control:hover{
+    opacity: 1;
+}
+
+@media (max-width:992px) and (min-width:768px){
+    .fashion .carousel-caption{
+        left:55%
+    }
+    .fashion .carousel-caption{
+        right: 0px;
+    }
+}
+
+
+/* 文字颜色 */
+.fashion .txt-top{
+    color: #15C288;
+}
+
+.fashion .txt-center span{
+    background: #ff9439;
+    border: 1px solid #ff8115;
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+.fashion .txt-buttom{
+    color: #616161;
+    font-size: 14px;
+}
+.fashion .warp-txt{
+    padding: 10px;
+    border: 1px solid #f0f0f0;
+}
+.fashion .warp-txt img{
+    margin-right: 0px;
+}
+
+/* 热门标签 */
+.hotTag .col-md-2{
+    padding:0px;
+}
+.hotTag .thumbnail{
+    padding: 17px 0px 7px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    border: 1px solid #efefef;
+}
+/* 文字样式 */
+.hotTag .pager{
+    margin-bottom: 0px;
+}
+.hotTag h3{
+    color: #666;
+    font-size: 16px;
+}
+.hotTag .caption p{
+    text-align: center;
+    margin-bottom: 0px;
+    color: #15C288;
+}
+/* 图片 */
+.hotTag .thumbnail>img:hover{
+    cursor: pointer;
+}
+
+
+/* 有效学习 */
+section .study{
+    padding: 70px 0px;
+    width: 100%;
+    cursor: pointer;
+    background: url('../img/index/bg.jpg');
+}
+.study .thumbnail{
+    background: transparent;
+    border: none;
+}
+
+.study .thumbnail p{
+    text-align: center;
+    color: white;
+}
+
+/* 动画时延 */
+.study .two .animate__animated{
+    animation-duration: 1.5s;
+}
+.study .two .animate__animated{
+    animation-duration: 2s;
+}
+.study .three .animate__animated{
+    animation-duration: 2.5s;
+}
+/* 更有趣的学习 */
+.study p{
+    width: 100%;
+    text-align: center;
+}
+.study p>a{
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 12px 35px;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+.study p>a:hover{
+    background-color: white;
+    color: #15C288;
+}
+/* 底部 */
+.footer{
+    /* width: 100%; */
+    padding: 35px 0;
+    background: #515151;
+    color: #fff;
+}
+.footer .second{
+    /* 警察图标参考 */
+    position: relative;
+}
+.footer .pager:nth-of-type(1){
+    margin:0px;
+}
+.footer .warp-txt>span{
+    padding: 0px 6px;
+    color: white;
+}
+.footer .warp-txt>span:hover{
+    cursor: pointer;
+    color: #15C288;
+    transition: color 0.5s;
+}
+
+.footer .warp-sma>span{
+    font-size: 12px;
+    color: #999;
+    padding-right: 10px;
+}
+.footer .warp-plice{
+    color: #999;
+    font-size: 14px;
+}
+.footer .warp-plice::before{
+    content: "";
+    /* transform: scale(0.2); */
+    background: url('../img/index/filing.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left:165px;
+    bottom: -58px;
+}
+.footer .warp-icon{
+    margin-right: 25px;
+}
+.footer .icon-size{
+    transform: scale(1.7);
+}
+
+.footer .foot-txt{
+    width: 100%;
+    color: #999;
+    border-top: 1px solid #5f5f5f;
+    font-size: 12px;
+    padding: 20px;
+}
+.footer .foot-txt>span{
+    margin:0px 10px;
+}
+.footer .foot-txt>span:nth-of-type(1):hover{
+    color: #999;
+}
+.footer .foot-txt>span:hover{
+    color: #15C288;
+    transform: color 1s;
+    cursor: pointer;
+}
+.footer .foot-txt2{
+    padding-left: 170px;
+    font-size: 12px;
+    color: #999;
+    cursor: pointer;
+}
+
+
+
+
+
+
